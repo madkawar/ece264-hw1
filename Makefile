@@ -12,7 +12,7 @@ all: main.c sort.c
 	
 # Fix the gcc command for the target ascending by fill in the missing part
 ascending: main.c sort.c
-	$(GCC) $(CFLAGS) [--- FILL IN THE MISING PART HERE ---]  -o $(EXEC) main.c sort.c
+	$(GCC) $(CFLAGS) $(TESTFLAGS) -o $(EXEC) main.c sort.c
 	
 test: all
 	@for path in $(TESTS); do \
