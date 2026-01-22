@@ -33,9 +33,9 @@ void ssort(int * arr, int size) {
 			int max;
 			max = i;
 			int j;
-			for (j = i + 1; j < size; j++){
+			for (j = max + 1; j < size; j++){
 				if (arr[j] > arr[max])
-				max = arr[j];
+				max = j;
 			}
 			int storage = arr[max];
 			arr[max] = arr[i];
