@@ -1,7 +1,9 @@
 /* MODIFY this file */
 
 #include "sort.h"
+//step 4 preprocessor directives
 #ifdef ASCENDING
+//asc acts as boolean value representing is ascending true or false 
 int asc = 1;
 #else
 int asc = 0;
@@ -10,8 +12,9 @@ int asc = 0;
 void ssort(int * arr, int size) {
 	/* For step 3, fill this in to perform a selection sort
 	   For step 4, add conditional compilation flags to perform an ascending selection sort instead */
+	//if statement implements step 4
 	if (asc == 1){
-		//int sorted[size];
+		//step 3 - selection sort ascending
 		int i;
 		for (i = 0; i < size - 1; i++){
 			int min;
@@ -27,7 +30,7 @@ void ssort(int * arr, int size) {
 		}
 	}
 	else{
-		//int sorted[size];
+		//step 3 - selection sort descending
 		int i;
 		for (i = 0; i < size - 1; i++){
 			int max;
